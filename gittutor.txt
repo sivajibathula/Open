@@ -1,0 +1,26 @@
+Hi this is my git learning tutorial
+commands for git 
+1 Initially you have to give user name and e-mail id because if you any changes in future git has to track so and so user did these changes for that reason why you have to provide user name and password commands are
+git config --global user.name "You name"
+git config --global user.email "Your email id"
+2 Here global means current system if you want to see the user details you can use command like this git config --list
+3 Any time if you need help of git you can simply typ git help this command will show all the commands that are existed in the git
+4 If you need help about any specific git command git help commit 
+5 If you want to know which directory you are working use PWD (Present Working Directory) command
+6 Use ls command to view the list of files in that directory use ls -la command to see the hidden files
+7 Git Initialization use git init command to initialize the git
+8 After Initialization save some file to the folder then after add all changes by using command git add . 
+9 Then after commit the changes by using command git commit -m "Type your modification messages here"
+10 To view the log file simply use command git log, If you want to see the specific person commits use command git log --author="person name"
+11 To view the status of the git we can use git status command it will show the status 
+12 The process is would be like this Working directory > Staging Area > Repository . Initially the file will be in local directory once you add to git it will be in staging area then after once you commit the file it will goes to the repository.
+13 To view the difference of a file use git diff command it will show
+14 git diff command is used to check the working copy of your local machine with the copy that is existed in the repository.
+15 To compare staging copy means once you add the copy into staging also we can compare by using git diff --staged
+16 To delete a file we have to use git rm filename
+17 If we want rename file we have to use mv command git mv oldfilename.extension then newfilename.extension
+18 If we want to commit source code directly to the repository with out adding into staging are we will command like git commit -am "Comments for that commit"
+	while commiting into repository we need to consider few things
+	1 if we use commit -am grab every thing from working copy to repository
+	2 This is only useful only on editing and modifying files if we delete rename files you should not use this command
+19 If you add some file to staging area then after you realize added version in not valid at that time we have to remove stated version called unstaging $git reset HEAD profile.html
